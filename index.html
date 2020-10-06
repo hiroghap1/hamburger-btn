@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ハンバーガーボタンサンプル</title>
 </head>
+
 <body>
     <h1>ハンバーガーボタンサンプル</h1>
     <ul>
-        <li><a href="./sample1/"><h2>ハンバーガーボタンサンプル1</h2></a></li>
-        <li><a href="./sample2/"><h2>ハンバーガーボタンサンプル2</h2></a></li>
-        <li><a href="./sample3/"><h2>ハンバーガーボタンサンプル3</h2></a></li>
+        <li><a href="./sample1/">
+                <h2>ハンバーガーボタンサンプル1</h2>
+            </a>
+            <ul>
+                <li>ハンバーガーメニュー開閉のみ</li>
+                <li>ボタン描画難易度：低</li>
+            </ul>
+        </li>
+        <li><a href="./sample2/">
+                <h2>ハンバーガーボタンサンプル2</h2>
+            </a>
+            <ul>
+                <li>ハンバーガーメニュー開閉</li>
+                <li>オーバーレイ作成</li>
+                <li>背景スクロールの固定</li>
+                <li>ボタン描画難易度：高（8HOURSと同じ記述のSVG）</li>
+            </ul>
+        </li>
+        <li><a href="./sample3/">
+                <h2>ハンバーガーボタンサンプル3</h2>
+            </a>
+            <ul>
+                <li>ハンバーガーメニュー開閉</li>
+                <li>背景スクロールの固定</li>
+                <li>WAI-ARIA 管理</li>
+                <li>フォーカスコントロール</li>
+                <li>アクセシビリティレベルA準拠予定（カーソルキー操作未実装）</li>
+                <li>ボタン描画難易度：中</li>
+            </ul>
+        </li>
     </ul>
 </body>
+
 </html>
