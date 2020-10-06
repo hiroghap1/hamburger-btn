@@ -14,7 +14,7 @@
     display: inline-block;
     width: 60%;
     height: 2px;
-    border-radius: 2px;
+    border-radius: 1px;
     background-color: #333;
     transition: transform .3s ease-out;
 }
