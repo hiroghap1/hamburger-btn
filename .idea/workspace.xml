@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f26020c4-54ec-4f36-9c53-ff3560194e39" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sample4/css/sample4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample4/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample4/js/sample4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample1/img/zoom3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample1/img/zoom4.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample1/css/sample1.css" beforeDir="false" afterPath="$PROJECT_DIR$/sample1/css/sample1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample3/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1idtQrSVCoElHCulOxyNzsc61Ro" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -32,6 +32,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample1/img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -59,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602249283463</updated>
       <workItem from="1602249284833" duration="1235000" />
-      <workItem from="1603791603538" duration="1729000" />
+      <workItem from="1603791603538" duration="1977000" />
+      <workItem from="1603928223775" duration="1165000" />
     </task>
     <servers />
   </component>
