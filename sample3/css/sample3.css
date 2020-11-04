@@ -87,6 +87,7 @@ body.fixed {
         background-color: rgba(255 255 255 / 95%);
         transition: bottom .3s;
         z-index: -1;
+        overflow-y: scroll;
     }
     [aria-expanded="true"]+.header-nav[aria-hidden="false"] {
         bottom: 0;
