@@ -1,15 +1,19 @@
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const drawerNav = document.getElementById('drawer-nav');
 const body = document.querySelector('body');
+const mediaQueryList = matchMedia('(min-width: 768px)');
 let drawerNavAria;
 let hamburgerBtnAria;
 let hamburgerBtnExpand;
 
-window.addEventListener('load', navAria, false);
-window.addEventListener('resize', navAria, false);
+// 画面サイズでNavigationの状態を監視
+onMediaChange(mediaQueryList);
+mediaQueryList.addEventListener('change',onMediaChange);
 
+// ハンバーガーボタンにクリックイベントを設定
 hamburgerBtn.addEventListener('click', activeToggle, false);
 
+//ハンバーガーボタンをクリックしたとき
 function activeToggle() {
     if (hamburgerBtnExpand) {
         hamburgerBtn.setAttribute('aria-expanded', 'false');
@@ -29,22 +33,9 @@ function activeToggle() {
     body.classList.toggle('fixed');
 }
 
-function navAria() {
-    const w = window.innerWidth;
-    if (w <= 768) {
-        if (hamburgerBtnAria) {
-            hamburgerBtn.setAttribute('aria-hidden', 'false');
-            hamburgerBtnAria = false;
-        }
-        if (hamburgerBtnExpand && !drawerNavAria || !hamburgerBtnExpand && drawerNavAria) {
-            return;
-        } else {
-            hamburgerBtn.setAttribute('aria-expanded', 'false');
-            hamburgerBtnExpand = false;
-            drawerNav.setAttribute('aria-hidden', 'true');
-            drawerNavAria = true;
-        }
-    } else {
+// ブレイクポイントをまたいだとき
+function onMediaChange(mq) {
+    if (mq.matches) {
         if (hamburgerBtnExpand) {
             hamburgerBtn.setAttribute('aria-expanded', 'false');
             hamburgerBtnExpand = false;
@@ -56,6 +47,19 @@ function navAria() {
         if (drawerNavAria) {
             drawerNav.setAttribute('aria-hidden', 'false');
             drawerNavAria = false;
+        }
+        body.classList.remove('fixed');
+    } else {
+        if (hamburgerBtnAria) {
+            hamburgerBtn.setAttribute('aria-hidden', 'false');
+            hamburgerBtnAria = false;
+        }
+        if (hamburgerBtnExpand && !drawerNavAria || !hamburgerBtnExpand && drawerNavAria) {
+        } else {
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            hamburgerBtnExpand = false;
+            drawerNav.setAttribute('aria-hidden', 'true');
+            drawerNavAria = true;
         }
     }
 }
