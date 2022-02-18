@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f26020c4-54ec-4f36-9c53-ff3560194e39" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample3/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f26020c4-54ec-4f36-9c53-ff3560194e39" name="Default Changelist" comment="Default Changelist" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,11 +52,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sample1/img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample1/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +87,12 @@
       <workItem from="1625884124035" duration="2994000" />
       <workItem from="1626298179378" duration="389000" />
       <workItem from="1626393845544" duration="586000" />
-      <workItem from="1630028356973" duration="105000" />
+      <workItem from="1630028356973" duration="623000" />
+      <workItem from="1630111080062" duration="365000" />
+      <workItem from="1630117129573" duration="1435000" />
+      <workItem from="1630119792181" duration="11247000" />
+      <workItem from="1642670083006" duration="659000" />
+      <workItem from="1645174746777" duration="2089000" />
     </task>
     <servers />
   </component>

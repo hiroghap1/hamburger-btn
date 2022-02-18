@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSサンプル</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/sample1.css">
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-css.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+
+    <script src="./js/sample1.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <p class="header-title"><a href="https://hiroghap1.github.io/hamburger-btn/">トップへ</a></p>
+            <button type="button" id="hamburger-btn" class="hamburger-btn">
+                <span class="hamburger-btn-bar"></span>
+                <span class="hamburger-btn-bar"></span>
+                <span class="hamburger-btn-bar"></span>
+            </button>
+            <nav class="header-nav">
+                <ul class="header-nav-list">
+                    <li class="header-nav-item"><a href="../sample1/" class="header-nav-item__link" tabindex="0">サンプル1</a></li>
+                    <li class="header-nav-item"><a href="../sample2" class="header-nav-item__link">サンプル2</a>
+                        <ul class="header-submenu-list">
+                            <li class="header-submenu-item"><a href="" class="header-submenu-item__link">サブメニュー1</a></li>
+                            <li class="header-submenu-item"><a href="" class="header-submenu-item__link">サブメニュー2だよ</a></li>
+                            <li class="header-submenu-item"><a href="" class="header-submenu-item__link">サブメニュー3</a></li>
+                        </ul>
+                    </li>
+                    <li class="header-nav-item"><a href="../sample3" class="header-nav-item__link">サンプル3</a></li>
+                    <li class="header-nav-item"><a href="../sample4" class="header-nav-item__link">サンプル4</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>CSS サンプル</h1>
+            <section>
+                <h2>変数を扱う：var</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            :root {
+                                --font-color: #333;
+                            }
+
+                            body {
+                                color: var(--font-color);
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section>
+                <h2>最小値、最大を設定できる：min(),max(),clamp()</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            .clamp-box {
+                                width: min(95%,840px);
+                                font-size: clamp(1rem,3vw,3rem);
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="clamp-box">
+                    ここが「.clamp-box」
+                </div>
+            </section>
+            <section>
+                <h2>imgを背景画像のように扱う：object-fit</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            .object-fit-cover {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            .object-fit-contain {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/zoom4.jpeg" loading="lazy" width="1920" height="1080" alt="" class="object-fit-cover">
+                    </div>
+                    <div class="col">
+                        <img src="img/zoom4.jpeg" loading="lazy" width="1920" height="1080" alt="" class="object-fit-contain">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>背景・親要素と混合させる：mix-blend-mode</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            .mix-blend-mode-text {
+                                mix-blend-mode: overlay;
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="mix-blend-mode">
+                    <h3 class="mix-blend-mode-text">Moon</h3>
+                </div>
+            </section>
+<!--            <section>-->
+<!--                <h2>背景にフィルターをかける：backdrop-filter</h2>-->
+<!--                <div>-->
+<!--                    <pre>-->
+<!--                        <code class="language-css">-->
+<!--                            .backdrop-filter {-->
+<!--                                backdrop-filter: blur(10px);-->
+<!--                            }-->
+<!--                        </code>-->
+<!--                    </pre>-->
+<!--                </div>-->
+<!--                <div class="backdrop-filter">-->
+<!--                    <h3 class="backdrop-filter-text">backdrop-filter</h3>-->
+<!--                </div>-->
+<!--            </section>-->
+            <section>
+                <h2>自由に要素を切り抜く：clip-path</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            .clip-path {
+                                max-width: 400px;
+                                height: 400px;
+                                margin-top: 1rem;
+                                background: url(../img/zoom3.jpeg) no-repeat center/cover;
+                                clip-path: polygon(51% 9%, 70% 34%, 96% 36%, 71% 61%, 84% 85%, 49% 69%, 21% 88%, 29% 62%, 10% 34%, 38% 34%);
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="mix-blend-mode clip-path">
+                </div>
+            </section>
+            <section>
+                <h2>コンテンツ幅になるwidth：content-fit</h2>
+                <div>
+                    <pre>
+                        <code class="language-css">
+                            .fit-content-text {
+                                    width: fit-content;
+                                    margin: auto;
+                                    border: 1px solid #999;
+                                    font-size: 3rem;
+                            }
+                        </code>
+                    </pre>
+                </div>
+                <div class="fit-content">
+                    <h3 class="fit-content-text">どんだけーーーー</h3>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
