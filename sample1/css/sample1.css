@@ -64,19 +64,28 @@ img {
 }
 .image-overlap1,
 .image-overlap2 {
-    display: block;
-    border: 6px solid white;
  }
 .image-overlap1 {
-    width: 70%;
+    display: none;
 }
 
 .image-overlap2 {
-    position: relative;
-    width: 45%;
-    margin: -20% 0 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fill,auto);
+    gap: 20px;
+}
+.grid div {
+    background-color: #999999;
+    height: 300px;
 }
 
+.grid div:nth-child(2) {
+    background-color: #999999;
+    height: 500px;
+}
 
 @media (max-width: 768px) {
     .hamburger-btn {
