@@ -23,11 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f26020c4-54ec-4f36-9c53-ff3560194e39" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample1/css/sample1.css" beforeDir="false" afterPath="$PROJECT_DIR$/sample1/css/sample1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sample1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample1/js/sample1.js" beforeDir="false" afterPath="$PROJECT_DIR$/sample1/js/sample1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample2/css/sample2.css" beforeDir="false" afterPath="$PROJECT_DIR$/sample2/css/sample2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sample2/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +49,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/hasegawayoshihiro/data/タダフラ/サンプル/ハンバーガーボタン",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -109,7 +102,10 @@
       <workItem from="1652230633939" duration="3187000" />
       <workItem from="1652276131070" duration="1475000" />
       <workItem from="1652423628825" duration="1976000" />
-      <workItem from="1653483679393" duration="293000" />
+      <workItem from="1653483679393" duration="2815000" />
+      <workItem from="1658078400719" duration="260000" />
+      <workItem from="1659141926929" duration="1245000" />
+      <workItem from="1721565995619" duration="252000" />
     </task>
     <servers />
   </component>
